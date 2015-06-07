@@ -1,60 +1,383 @@
-# Understanding Git 
+# Workshop D3
 
-by <a href="https://twitter.com/tednaleid">@tednaleid</a>
+par <a href="https://twitter.com/ThomasG77">@ThomasG77</a>, WebGeoDataVore
 
 !SLIDE shout
 
-# Understanding Git 
+# Workshop D3
 
-## by <a href="https://twitter.com/tednaleid">@tednaleid</a>
+## par <a href="https://twitter.com/ThomasG77">@ThomasG77</a>
 
-!SLIDE quieter shout
+!SLIDE
 
-# you can't modify commits<br/><br/>only add new ones
+* D3: possibilités de représentations et écosystème
 
-!SLIDE quietest shout 
-# commits are completely immutable and are _impossible_ to accidentally destroy with git commands
+* Contextualisation: pourquoi D3? La visualisation de données
 
-## though <code>rm -rf .git</code> will lose anything not yet pushed out
+* Quel(s) intérêt(s) pour la cartographie ?
 
-!SLIDE quieter shout 
-# uncommitted work is easily destroyed, so commit early &amp; often
+* Rappels pratiques
 
-!SLIDE quieter shout
+* Travaux pratiques avec mise en ligne de votre démo
 
-# garbage collection is the only truly destructive git action 
+!SLIDE
 
-!SLIDE quietest shout
-# garbage collection only destroys commits with _nothing_ pointing at them
+# De nombreux exemples
 
-!SLIDE 
-# what points at commits? 
+* [Exemples officiels](https://github.com/mbostock/d3/wiki/Gallery)
+* [Gallerie de Christophe Viau](http://christopheviau.com/d3list/gallery.html)
 
-# other commits
+!SLIDE
 
-# tags 
+# Une parenté: [Protovis](https://mbostock.github.io/protovis/)
 
-# branches 
+<img alt="" align="center" src="images/website-protovis.png">
 
-# the reflog
+!SLIDE
 
-!SLIDE 
-<br/>
-# commit
+# Un écosystème effervescent
 
-point at 0..N parent commits 
+* Natif
+* Surcouches
+* Surcouches cartographiques
+* Services et autres programmes autour
+
+!SLIDE quieter
+<br>
+# Surcouches pour des besoins classiques (sans cartographie)
+
+!SLIDE
+
+* http://nvd3.org
+
+<img alt="" align="center" src="images/website-nvd3.png">
+
+!SLIDE
+
+* http://dimplejs.org
+
+<img alt="" align="center" src="images/website-dimple.png">
+
+!SLIDE
+
+* http://c3js.org
+
+<img alt="" align="center" src="images/website-c3js.png">
+
+!SLIDE
+
+* https://tenxer.github.io/xcharts/
+
+<img alt="" align="center" src="images/website-xcharts.png">
+
+!SLIDE quieter
+<br>
+# Surcouches cartographiques
+
+!SLIDE
+
+# Choroplèthes et points proportionnels, https://datamaps.github.io
+
+<img alt="" align="center" src="images/website-datamaps.png">
+
+!SLIDE
+
+# Visualisation avec fond de plan et plus, https://github.com/emeeks/d3-carto-map
+
+<img alt="" align="center" src="images/website-d3cartomap.png">
+
+!SLIDE
+
+# Globe 3D, http://planetaryjs.com
+
+<img alt="" align="center" src="images/website-planetaryjs.png">
+
+!SLIDE
+
+# Services et autres applications utilisant D3
+
+Pour faire une première visualisation en ligne
+
+* http://datamatic.io
+* http://app.raw.densitydesign.org
+
+En passant depuis un autre language de programmation
+
+* https://github.com/areski/python-nvd3
+
+!SLIDE
+<br>
+# Contexte de D3: OpenData et Visualisation de données
+
+Deux phénomènes liés à un changement de vision du rapport au citoyen
+
+Quelques raccourcis explicatifs sur ces sujets
+
+!SLIDE
+<br>
+# Principes de l'OpenData:
+
+* Données déjà payées dans le cadre du service public donc doivent être disponibles
+* Attente de transparence de la part des citoyens
+* Création de richesse potentielle mais comment valoriser?
+* OpenData et DataDéluge: trop de données = perte de sens ou impossible à extraire
+* Visualisation de données vue comme un moyen de permettre la valorisation
+
+!SLIDE
+<br>
+# Plusieurs aspects de la visualisation de données:
+
+* Acquérir
+* Analyser/Nettoyer
+* Valoriser
+
+!SLIDE
+<br>
+# D3 intervient en phase 2 et 3:
+
+* pour analyser la donnée (distribution, anomalies,...)
+* pour valoriser la donnée: "bon" diagramme pour répondre à une question ou s'interroger sur une donnée
+
+!SLIDE
+
+# Quelques exemples de classification
+
+* http://www.datavizcatalogue.com
+* http://img.labnol.org/di/data-chart-type.png
+* http://www.visual-literacy.org/periodic_table/periodic_table.html
+* http://www.los-list.com/blog/wp-content/uploads/2010/03/VisualMiscellaneumTypesofInformationL.gif
+
+!SLIDE
+
+# Intérêts dans un contexte cartographique
+
+Plusieurs visions possibles:
+
+* remplacer des outils comme Leaflet, OpenLayers
+* un seul outil "pour les gouverner tous"
+* complément cartographique ou non cartographique
+
+!SLIDE
+<br>
+# Commentaires
+
+* Pour le point 1, c'est un question de besoin: s'il est simple, D3 peut être suffisant
+* Pour le point 2, plutôt pour ceux qui partent de D3
+* Pour le point 3: soit parce que D3 permet des visualisations cartographiques originales soit parce qu'il y a besoin d'autres choses que des cartes pour la problématique.
+
+!SLIDE
+
+# Qui l'utilise?
+
+* Journalistes de données (Le monde, Le Temps, Rue 89, Ouest Media Lab,...)
+* Humanités numériques (chercheurs comme Martin Grandjean)
+* Sociétés spécialisées en visualisation de données: Stamen Design, DataVeyes, We Do Data,...
+* Pratiquants de la "data science" et du "big data"
+* Sociétés ayant besoin de tableaux de bord
+
+# Qui en a besoin potentiellement?
+
+!SLIDE
+<br>
+# Plan
+
+* Pourquoi D3?
+* Prérequis technique
+* Selections
+* Data
+* Scales & Axes
+* Shapes
+* Layouts 
+
+!SLIDE
+
+# Les "layouts"?
+
+Pour pouvoir générer des graphes, ils permettent de spécifier les relations graphiques entre les élements d'un graphe.
+Généralement, il faut une structure de données précises en entrée. Un layout est un algorithme qui génère une structure de données.
+
+!SLIDE
+
+# D3 permet de visualiser des données :
+
+## en utilisant les standards du web: HTML, CSS, JS et SVG
+
+## en transformant la donnée en élément HTML ou SVG
+
+<a href="demos/data-to-element-001.html" target="_blank"><img src="images/data-to-element.png" alt="Données vers éléments"></a>
+
+!SLIDE quieter
+<br>
+# Data-Driven Documents
+
+## Le nom “D3” fait référence aux 3 initiales et au [Document Object Model (DOM) du W3C](http://www.w3.org/TR/dom/).
+
+!SLIDE quieter
+<br>
+# Ressources HTML
+
+## [Spécifications HTML 5](http://www.w3.org/TR/html5/), [HTML 5 for developers](https://developers.whatwg.org), [Mozilla Developer Network](https://developer.mozilla.org)
+
+!SLIDE
+
+# Base HTML 5
 
 ```
-                          E---F---G
-                         /         \
-                    A---B---C---D---H---I
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <style></style>
+  <script></script>
+</head>
+<body>
+  <!-- Le reste du contenu -->
+</body>
+</html>
 ```
 
-most commonly 1 or 2 parent commits
+<a href="demos/html-basic-002.html" target="_blank">Démo</a>
 
-!SLIDE 
+!SLIDE quieter
+<br>
+# Ressources SVG
 
-# tag 
+## [Spécifications SVG](http://www.w3.org/TR/SVG/), [MDN, partie SVG](https://developer.mozilla.org/en/SVG), [Référence de l'API D3](https://github.com/mbostock/d3/wiki/SVG-Shapes)
+
+!SLIDE
+
+# Démo SVG
+
+```
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Exemple SVG</title>
+  <style></style>
+  <script></script>
+</head>
+<body>
+  <svg height="100" width="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="0.5" fill="#F89C43" />
+    Navigateur sans support SVG "inline".
+  </svg> 
+</body>
+</html>
+```
+
+<a href="demos/svg-basic-003.html" target="_blank">Démo</a>
+
+!SLIDE quieter
+<br>
+# Ressources CSS
+
+## [Spécifications HTML 5](http://www.w3.org/TR/html5/), [HTML 5 for developers](https://developers.whatwg.org), [Mozilla Developer Network](https://developer.mozilla.org)
+
+!SLIDE
+
+# Démo CSS
+
+```
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Exemple CSS</title>
+  <style>
+  body {
+    background-color: #F89C43;
+  }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Le reste du contenu -->
+</body>
+</html>
+```
+
+<a href="demos/css-basic-004.html" target="_blank">Démo</a>
+
+!SLIDE quieter
+<br>
+# Ressources JavaScript
+
+## [Spécifications SVG](http://www.w3.org/TR/SVG/), [MDN, partie SVG](https://developer.mozilla.org/en/SVG), [Référence de l'API D3](https://github.com/mbostock/d3/wiki/SVG-Shapes), [liste de livres JavaScript de Revolunet](http://jsbooks.revolunet.com) dont [Eloquent JavaScript](http://fr.eloquentjavascript.net/) en français
+
+!SLIDE
+
+# Démo JavaScript
+
+```
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Exemple JavaScript</title>
+  <style></style>
+  <script>
+    console.log([5, 10, 15, 20, 25]);
+  </script>
+</head>
+<body>
+  <!-- Le reste du contenu -->
+</body>
+</html>
+```
+
+<a href="demos/css-basic-004.html" target="_blank">Démo</a>
+
+!SLIDE
+<br>
+# JavaScript, l'incontournable
+
+<quote><i>Le JavaScript peut être considéré comme la glue dans D3:<br>rien ne marche sans lui.</i></quote>
+
+Il faut donc le maîtriser correctement pour pouvoir produire des visualisations personnalisées ou personnaliser les outils utilisant D3.
+
+!SLIDE
+
+# Chrome Developer Tools
+
+<a href="https://developer.chrome.com/devtools" target="_blank"><img src="images/console-chrome.png" /></a>
+
+!SLIDE
+
+# Plugin FireBug (Mozilla Firefox)
+
+<a href="http://getfirebug.com" target="_blank"><img src="images/console-firebug.png" /></a>
+
+!SLIDE
+
+# Debuggueur Mozilla Firefox par défaut
+
+<a href="https://developer.mozilla.org/fr/docs/Outils/D%C3%A9bogueur" target="_blank"><img src="images/console-mozilla-default.png" /></a>
+
+!SLIDE
+
+# "Secrets of the Browser<br>Developer Tools"
+
+<a href="http://devtoolsecrets.com" target="_blank"><img src="images/dev-tool-secrets.png" /></a>
+
+!SLIDE
+
+## Chercher par fonctions
+http://bl.ocksplorer.org
+
+# Se retrouver dans l'API
+http://devdocs.io/d3/
+https://github.com/mbostock/d3/wiki/API-Reference
+
+## Faire vos démos en ligne
+http://bl.ocks.org
+http://tributary.io
+http://jsfiddle.net
+
+!SLIDE
+
+# tag
 fixed commit pointers
 
 ```
@@ -73,8 +396,8 @@ fixed commit pointers
                          release_1.0
 ```
 
-!SLIDE 
-# branch 
+!SLIDE
+# branch
 
 floating commit pointer
 
@@ -94,8 +417,8 @@ floating commit pointer
                                 master
 ```
 
-!SLIDE 
-# remote branch 
+!SLIDE
+# remote branch
 a &#8220;remote&#8221; branch is just a commit pointer in your local repo
 
 ```
@@ -108,7 +431,7 @@ a &#8220;remote&#8221; branch is just a commit pointer in your local repo
 
 it's updated whenever you do a `fetch` or `pull`, otherwise nothing remote about them
 
-!SLIDE 
+!SLIDE
 # branch
 
 text files in the `.git` directory
@@ -120,26 +443,26 @@ text files in the `.git` directory
 ```
 
 ```
-% ls -1 .git/refs/remotes/**/*  
+% ls -1 .git/refs/remotes/**/* 
 .git/refs/remotes/origin/HEAD
 .git/refs/remotes/origin/master
 .git/refs/remotes/origin/my_feature_branch
 ```
 
-!SLIDE 
-# branch 
+!SLIDE
+# branch
 
 contains is the SHA of the commit it's pointing at
 
 ```
-% cat .git/refs/heads/master 
+% cat .git/refs/heads/master
 0981e8c8ffbd3a1277dda1173fb6f5cbf4750d51
 
 # .git/objects/09/81e8c8ffbd3a1277dda1173fb6f5cbf4750d51
 ```
 
-!SLIDE 
-# branches point at commits 
+!SLIDE
+# branches point at commits
 
 Contain `tree` (filesystem), `parent` commits and commit metadata
 ```
@@ -155,13 +478,13 @@ merge commit of two branches
 
 The ID is the SHA of the commit's contents
 
-!SLIDE 
+!SLIDE
 <br/>
-# branches 
+# branches
 commits don't &#8220;belong to&#8221; branches, there's nothing in the commit metadata about branches
 
-!SLIDE 
-# branches 
+!SLIDE
+# branches
 a branch's commits are implied by the ancestry of the commit the branch points at
 
 ```
@@ -177,9 +500,9 @@ a branch's commits are implied by the ancestry of the commit the branch points a
 <code>master</code> is <code>A-B-C-D</code> and <code>feature</code> is <code>A-B-E-F-G</code>
 
 !SLIDE
-# HEAD 
+# HEAD
 
-<code>HEAD</code> is the current branch/commit 
+<code>HEAD</code> is the current branch/commit
 
 This will be the parent of the next commit
 
@@ -191,8 +514,8 @@ ref: refs/heads/master
 most of the time it points to a branch, but can point directly to a SHA when &#8220;detached&#8221;
 
 
-!SLIDE 
-# the reflog 
+!SLIDE
+# the reflog
 a log of recent <code>HEAD</code> movement
 
 ```
@@ -215,30 +538,30 @@ d72efc4 HEAD@{1}: commit: adding bar.txt
 by default it keeps at least 30 days of history
 
 
-!SLIDE 
+!SLIDE
 <br/>
-# the reflog 
+# the reflog
 unique to a repository instance
 
-!SLIDE 
-# the reflog 
+!SLIDE
+# the reflog
 can be scoped to a particular branch
 
 ```
 % git reflog my_branch
-347f5fe my_branch@{0}: merge master: Merge made by the recurs… 
+347f5fe my_branch@{0}: merge master: Merge made by the recurs…
 4e6007e my_branch@{1}: merge origin/my_branch: Fast-forward
 32834d8 my_branch@{2}: commit (amend): upgrade redis version
 2720e40 my_branch@{3}: commit: upgrade redis version 
 ```
 
-!SLIDE 
+!SLIDE
 <br/>
-# dangling commit 
+# dangling commit
 if the only thing pointing to a commit is the reflog, it's &#8220;dangling&#8221;
 
-!SLIDE 
-# dangling commit 
+!SLIDE
+# dangling commit
 ```
                     A---B---C---D---E---F
                                         ↑
@@ -257,8 +580,8 @@ if the only thing pointing to a commit is the reflog, it's &#8220;dangling&#8221
 
 <code>C..F</code> are now dangling
 
-!SLIDE 
-# dangling commit 
+!SLIDE
+# dangling commit
 
 but they will be safe for ~30 days because of the reflog
 
@@ -273,19 +596,19 @@ but they will be safe for ~30 days because of the reflog
 
 <code>HEAD@{1}</code> will become <code>HEAD@{2}</code>..<code>HEAD@{N}</code> as refs are added to the reflog
 
-!SLIDE 
+!SLIDE
 <br/>
 # garbage collection 
 once a dangling commit leaves the reflog, it is &#8220;loose&#8221; and is at risk of garbage collection
 
-!SLIDE 
+!SLIDE
 <br/>
 # garbage collection 
 git does a <code>gc</code> when the number of &#8220;loose&#8221; objects hits a threshold
 
-something like every 1000 commits 
+something like every 1000 commits
 
-!SLIDE 
+!SLIDE
 <br/>
 # garbage collection 
 to prevent garbage collecting a commit, just point something at it
@@ -296,7 +619,7 @@ to prevent garbage collecting a commit, just point something at it
 
 !SLIDE
 
-# the index 
+# the index
 
 a pre-commit staging area
 
@@ -304,10 +627,10 @@ a pre-commit staging area
 
 some bypass the index with <code>git commit -a -m "msg"</code>
 
-!SLIDE 
+!SLIDE
 <br/>
 
-# you should have courage to experiment 
+# you should have courage to experiment
 
 you have _weeks_ to retrieve prior commits if something doesn't work
 

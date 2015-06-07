@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Understanding Git</title>
@@ -8,65 +8,415 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/ribbon/styles/screen.css">
 	
-		<link rel="stylesheet" href="styles/screen.css?1406614775000">
+		<link rel="stylesheet" href="styles/screen.css?1433700806840">
 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 </head>
 <body class="list">
 	<header class="caption">
-		<h1 id="understanding-git">Understanding Git</h1>
-<p>by <a href="https://twitter.com/tednaleid">@tednaleid</a></p>
+		<h1 id="workshop-d3">Workshop D3</h1>
+<p>par <a href="https://twitter.com/ThomasG77">@ThomasG77</a>, WebGeoDataVore</p>
 
 	</header>
 
 	
 	<section class="slide shout" ><div>
-		<h1>Understanding Git</h1>
-<h2>by <a href="https://twitter.com/tednaleid">@tednaleid</a></h2>
-
-	</div></section>
-	
-	<section class="slide quieter shout" ><div>
-		<h1>you can&#39;t modify commits<br/><br/>only add new ones</h1>
-
-	</div></section>
-	
-	<section class="slide quietest shout" ><div>
-		<h1>commits are completely immutable and are <em>impossible</em> to accidentally destroy with git commands</h1>
-<h2>though <code>rm -rf .git</code> will lose anything not yet pushed out</h2>
-
-	</div></section>
-	
-	<section class="slide quieter shout" ><div>
-		<h1>uncommitted work is easily destroyed, so commit early &amp; often</h1>
-
-	</div></section>
-	
-	<section class="slide quieter shout" ><div>
-		<h1>garbage collection is the only truly destructive git action</h1>
-
-	</div></section>
-	
-	<section class="slide quietest shout" ><div>
-		<h1>garbage collection only destroys commits with <em>nothing</em> pointing at them</h1>
+		<h1>Workshop D3</h1>
+<h2>par <a href="https://twitter.com/ThomasG77">@ThomasG77</a></h2>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>what points at commits?</h1>
-<h1>other commits</h1>
-<h1>tags</h1>
-<h1>branches</h1>
-<h1>the reflog</h1>
+		<ul>
+<li><p>D3: possibilités de représentations et écosystème</p>
+</li>
+<li><p>Contextualisation: pourquoi D3? La visualisation de données</p>
+</li>
+<li><p>Quel(s) intérêt(s) pour la cartographie ?</p>
+</li>
+<li><p>Rappels pratiques</p>
+</li>
+<li><p>Travaux pratiques avec mise en ligne de votre démo</p>
+</li>
+</ul>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<p><br/></p>
-<h1>commit</h1>
-<p>point at 0..N parent commits </p>
-<pre><code>                          E---F---G</code>
-<code>                         /         \</code>
-<code>                    A---B---C---D---H---I</code></pre><p>most commonly 1 or 2 parent commits</p>
+		<h1>De nombreux exemples</h1>
+<ul>
+<li><a href="https://github.com/mbostock/d3/wiki/Gallery">Exemples officiels</a></li>
+<li><a href="http://christopheviau.com/d3list/gallery.html">Gallerie de Christophe Viau</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Une parenté: <a href="https://mbostock.github.io/protovis/">Protovis</a></h1>
+<img alt="" align="center" src="images/website-protovis.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Un écosystème effervescent</h1>
+<ul>
+<li>Natif</li>
+<li>Surcouches</li>
+<li>Surcouches cartographiques</li>
+<li>Services et autres programmes autour</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Surcouches pour des besoins classiques (sans cartographie)</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<ul>
+<li><a href="http://nvd3.org">http://nvd3.org</a></li>
+</ul>
+<img alt="" align="center" src="images/website-nvd3.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<ul>
+<li><a href="http://dimplejs.org">http://dimplejs.org</a></li>
+</ul>
+<img alt="" align="center" src="images/website-dimple.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<ul>
+<li><a href="http://c3js.org">http://c3js.org</a></li>
+</ul>
+<img alt="" align="center" src="images/website-c3js.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<ul>
+<li><a href="https://tenxer.github.io/xcharts/">https://tenxer.github.io/xcharts/</a></li>
+</ul>
+<img alt="" align="center" src="images/website-xcharts.png">
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Surcouches cartographiques</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Choroplèthes et points proportionnels, <a href="https://datamaps.github.io">https://datamaps.github.io</a></h1>
+<img alt="" align="center" src="images/website-datamaps.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Visualisation avec fond de plan et plus, <a href="https://github.com/emeeks/d3-carto-map">https://github.com/emeeks/d3-carto-map</a></h1>
+<img alt="" align="center" src="images/website-d3cartomap.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Globe 3D, <a href="http://planetaryjs.com">http://planetaryjs.com</a></h1>
+<img alt="" align="center" src="images/website-planetaryjs.png">
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Services et autres applications utilisant D3</h1>
+<p>Pour faire une première visualisation en ligne</p>
+<ul>
+<li><a href="http://datamatic.io">http://datamatic.io</a></li>
+<li><a href="http://app.raw.densitydesign.org">http://app.raw.densitydesign.org</a></li>
+</ul>
+<p>En passant depuis un autre language de programmation</p>
+<ul>
+<li><a href="https://github.com/areski/python-nvd3">https://github.com/areski/python-nvd3</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Contexte de D3: OpenData et Visualisation de données</h1>
+<p>Deux phénomènes liés à un changement de vision du rapport au citoyen</p>
+<p>Quelques raccourcis explicatifs sur ces sujets</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Principes de l&#39;OpenData:</h1>
+<ul>
+<li>Données déjà payées dans le cadre du service public donc doivent être disponibles</li>
+<li>Attente de transparence de la part des citoyens</li>
+<li>Création de richesse potentielle mais comment valoriser?</li>
+<li>OpenData et DataDéluge: trop de données = perte de sens ou impossible à extraire</li>
+<li>Visualisation de données vue comme un moyen de permettre la valorisation</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Plusieurs aspects de la visualisation de données:</h1>
+<ul>
+<li>Acquérir</li>
+<li>Analyser/Nettoyer</li>
+<li>Valoriser</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>D3 intervient en phase 2 et 3:</h1>
+<ul>
+<li>pour analyser la donnée (distribution, anomalies,...)</li>
+<li>pour valoriser la donnée: &quot;bon&quot; diagramme pour répondre à une question ou s&#39;interroger sur une donnée</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Quelques exemples de classification</h1>
+<ul>
+<li><a href="http://www.datavizcatalogue.com">http://www.datavizcatalogue.com</a></li>
+<li><a href="http://img.labnol.org/di/data-chart-type.png">http://img.labnol.org/di/data-chart-type.png</a></li>
+<li><a href="http://www.visual-literacy.org/periodic_table/periodic_table.html">http://www.visual-literacy.org/periodic_table/periodic_table.html</a></li>
+<li><a href="http://www.los-list.com/blog/wp-content/uploads/2010/03/VisualMiscellaneumTypesofInformationL.gif">http://www.los-list.com/blog/wp-content/uploads/2010/03/VisualMiscellaneumTypesofInformationL.gif</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Intérêts dans un contexte cartographique</h1>
+<p>Plusieurs visions possibles:</p>
+<ul>
+<li>remplacer des outils comme Leaflet, OpenLayers</li>
+<li>un seul outil &quot;pour les gouverner tous&quot;</li>
+<li>complément cartographique ou non cartographique</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Commentaires</h1>
+<ul>
+<li>Pour le point 1, c&#39;est un question de besoin: s&#39;il est simple, D3 peut être suffisant</li>
+<li>Pour le point 2, plutôt pour ceux qui partent de D3</li>
+<li>Pour le point 3: soit parce que D3 permet des visualisations cartographiques originales soit parce qu&#39;il y a besoin d&#39;autres choses que des cartes pour la problématique.</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Qui l&#39;utilise?</h1>
+<ul>
+<li>Journalistes de données (Le monde, Le Temps, Rue 89, Ouest Media Lab,...)</li>
+<li>Humanités numériques (chercheurs comme Martin Grandjean)</li>
+<li>Sociétés spécialisées en visualisation de données: Stamen Design, DataVeyes, We Do Data,...</li>
+<li>Pratiquants de la &quot;data science&quot; et du &quot;big data&quot;</li>
+<li>Sociétés ayant besoin de tableaux de bord</li>
+</ul>
+<h1>Qui en a besoin potentiellement?</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Plan</h1>
+<ul>
+<li>Pourquoi D3?</li>
+<li>Prérequis technique</li>
+<li>Selections</li>
+<li>Data</li>
+<li>Scales &amp; Axes</li>
+<li>Shapes</li>
+<li>Layouts </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Les &quot;layouts&quot;?</h1>
+<p>Pour pouvoir générer des graphes, ils permettent de spécifier les relations graphiques entre les élements d&#39;un graphe.
+Généralement, il faut une structure de données précises en entrée. Un layout est un algorithme qui génère une structure de données.</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>D3 permet de visualiser des données :</h1>
+<h2>en utilisant les standards du web: HTML, CSS, JS et SVG</h2>
+<h2>en transformant la donnée en élément HTML ou SVG</h2>
+<p><a href="demos/data-to-element-001.html" target="_blank"><img src="images/data-to-element.png" alt="Données vers éléments"></a></p>
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Data-Driven Documents</h1>
+<h2>Le nom “D3” fait référence aux 3 initiales et au <a href="http://www.w3.org/TR/dom/">Document Object Model (DOM) du W3C</a>.</h2>
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Ressources HTML</h1>
+<h2><a href="http://www.w3.org/TR/html5/">Spécifications HTML 5</a>, <a href="https://developers.whatwg.org">HTML 5 for developers</a>, <a href="https://developer.mozilla.org">Mozilla Developer Network</a></h2>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Base HTML 5</h1>
+<pre><code>&lt;!doctype html&gt;</code>
+<code>&lt;html lang=&quot;fr&quot;&gt;</code>
+<code>&lt;head&gt;</code>
+<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
+<code>  &lt;title&gt;Titre de la page&lt;/title&gt;</code>
+<code>  &lt;style&gt;&lt;/style&gt;</code>
+<code>  &lt;script&gt;&lt;/script&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;body&gt;</code>
+<code>  &lt;!-- Le reste du contenu --&gt;</code>
+<code>&lt;/body&gt;</code>
+<code>&lt;/html&gt;</code></pre><p><a href="demos/html-basic-002.html" target="_blank">Démo</a></p>
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Ressources SVG</h1>
+<h2><a href="http://www.w3.org/TR/SVG/">Spécifications SVG</a>, <a href="https://developer.mozilla.org/en/SVG">MDN, partie SVG</a>, <a href="https://github.com/mbostock/d3/wiki/SVG-Shapes">Référence de l&#39;API D3</a></h2>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Démo SVG</h1>
+<pre><code>&lt;!doctype html&gt;</code>
+<code>&lt;html lang=&quot;fr&quot;&gt;</code>
+<code>&lt;head&gt;</code>
+<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
+<code>  &lt;title&gt;Exemple SVG&lt;/title&gt;</code>
+<code>  &lt;style&gt;&lt;/style&gt;</code>
+<code>  &lt;script&gt;&lt;/script&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;body&gt;</code>
+<code>  &lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;</code>
+<code>    &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot; stroke=&quot;black&quot; stroke-width=&quot;0.5&quot; fill=&quot;#F89C43&quot; /&gt;</code>
+<code>    Navigateur sans support SVG &quot;inline&quot;.</code>
+<code>  &lt;/svg&gt; </code>
+<code>&lt;/body&gt;</code>
+<code>&lt;/html&gt;</code></pre><p><a href="demos/svg-basic-003.html" target="_blank">Démo</a></p>
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Ressources CSS</h1>
+<h2><a href="http://www.w3.org/TR/html5/">Spécifications HTML 5</a>, <a href="https://developers.whatwg.org">HTML 5 for developers</a>, <a href="https://developer.mozilla.org">Mozilla Developer Network</a></h2>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Démo CSS</h1>
+<pre><code>&lt;!doctype html&gt;</code>
+<code>&lt;html lang=&quot;fr&quot;&gt;</code>
+<code>&lt;head&gt;</code>
+<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
+<code>  &lt;title&gt;Exemple CSS&lt;/title&gt;</code>
+<code>  &lt;style&gt;</code>
+<code>  body {</code>
+<code>    background-color: #F89C43;</code>
+<code>  }</code>
+<code>  &lt;/style&gt;</code>
+<code>  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;body&gt;</code>
+<code>  &lt;!-- Le reste du contenu --&gt;</code>
+<code>&lt;/body&gt;</code>
+<code>&lt;/html&gt;</code></pre><p><a href="demos/css-basic-004.html" target="_blank">Démo</a></p>
+
+	</div></section>
+	
+	<section class="slide quieter" ><div>
+		<p><br></p>
+<h1>Ressources JavaScript</h1>
+<h2><a href="http://www.w3.org/TR/SVG/">Spécifications SVG</a>, <a href="https://developer.mozilla.org/en/SVG">MDN, partie SVG</a>, <a href="https://github.com/mbostock/d3/wiki/SVG-Shapes">Référence de l&#39;API D3</a>, <a href="http://jsbooks.revolunet.com">liste de livres JavaScript de Revolunet</a> dont <a href="http://fr.eloquentjavascript.net/">Eloquent JavaScript</a> en français</h2>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Démo JavaScript</h1>
+<pre><code>&lt;!doctype html&gt;</code>
+<code>&lt;html lang=&quot;fr&quot;&gt;</code>
+<code>&lt;head&gt;</code>
+<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
+<code>  &lt;title&gt;Exemple JavaScript&lt;/title&gt;</code>
+<code>  &lt;style&gt;&lt;/style&gt;</code>
+<code>  &lt;script&gt;</code>
+<code>    console.log([5, 10, 15, 20, 25]);</code>
+<code>  &lt;/script&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;body&gt;</code>
+<code>  &lt;!-- Le reste du contenu --&gt;</code>
+<code>&lt;/body&gt;</code>
+<code>&lt;/html&gt;</code></pre><p><a href="demos/css-basic-004.html" target="_blank">Démo</a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>JavaScript, l&#39;incontournable</h1>
+<quote><i>Le JavaScript peut être considéré comme la glue dans D3:<br>rien ne marche sans lui.</i></quote>
+
+<p>Il faut donc le maîtriser correctement pour pouvoir produire des visualisations personnalisées ou personnaliser les outils utilisant D3.</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Chrome Developer Tools</h1>
+<p><a href="https://developer.chrome.com/devtools" target="_blank"><img src="images/console-chrome.png" /></a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Plugin FireBug (Mozilla Firefox)</h1>
+<p><a href="http://getfirebug.com" target="_blank"><img src="images/console-firebug.png" /></a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Debuggueur Mozilla Firefox par défaut</h1>
+<p><a href="https://developer.mozilla.org/fr/docs/Outils/D%C3%A9bogueur" target="_blank"><img src="images/console-mozilla-default.png" /></a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>&quot;Secrets of the Browser<br>Developer Tools&quot;</h1>
+<p><a href="http://devtoolsecrets.com" target="_blank"><img src="images/dev-tool-secrets.png" /></a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h2>Chercher par fonctions</h2>
+<p><a href="http://bl.ocksplorer.org">http://bl.ocksplorer.org</a></p>
+<h1>Se retrouver dans l&#39;API</h1>
+<p><a href="http://devdocs.io/d3/">http://devdocs.io/d3/</a>
+<a href="https://github.com/mbostock/d3/wiki/API-Reference">https://github.com/mbostock/d3/wiki/API-Reference</a></p>
+<h2>Faire vos démos en ligne</h2>
+<p><a href="http://bl.ocks.org">http://bl.ocks.org</a>
+<a href="http://tributary.io">http://tributary.io</a>
+<a href="http://jsfiddle.net">http://jsfiddle.net</a></p>
 
 	</div></section>
 	
@@ -106,7 +456,7 @@
 <p>text files in the <code>.git</code> directory</p>
 <pre><code>% ls -1 .git/refs/heads/**/*</code>
 <code>.git/refs/heads/master</code>
-<code>.git/refs/heads/my_feature_branch</code></pre><pre><code>% ls -1 .git/refs/remotes/**/*  </code>
+<code>.git/refs/heads/my_feature_branch</code></pre><pre><code>% ls -1 .git/refs/remotes/**/* </code>
 <code>.git/refs/remotes/origin/HEAD</code>
 <code>.git/refs/remotes/origin/master</code>
 <code>.git/refs/remotes/origin/my_feature_branch</code></pre>
@@ -115,7 +465,7 @@
 	<section class="slide " ><div>
 		<h1>branch</h1>
 <p>contains is the SHA of the commit it&#39;s pointing at</p>
-<pre><code>% cat .git/refs/heads/master </code>
+<pre><code>% cat .git/refs/heads/master</code>
 <code>0981e8c8ffbd3a1277dda1173fb6f5cbf4750d51</code>
 <code>&shy;</code>
 <code># .git/objects/09/81e8c8ffbd3a1277dda1173fb6f5cbf4750d51</code></pre>
@@ -157,7 +507,7 @@
 	
 	<section class="slide " ><div>
 		<h1>HEAD</h1>
-<p><code>HEAD</code> is the current branch/commit </p>
+<p><code>HEAD</code> is the current branch/commit</p>
 <p>This will be the parent of the next commit</p>
 <pre><code>% cat .git/HEAD</code>
 <code>ref: refs/heads/master</code></pre><p>most of the time it points to a branch, but can point directly to a SHA when &#8220;detached&#8221;</p>
@@ -187,7 +537,7 @@
 		<h1>the reflog</h1>
 <p>can be scoped to a particular branch</p>
 <pre><code>% git reflog my_branch</code>
-<code>347f5fe my_branch@{0}: merge master: Merge made by the recurs… </code>
+<code>347f5fe my_branch@{0}: merge master: Merge made by the recurs…</code>
 <code>4e6007e my_branch@{1}: merge origin/my_branch: Fast-forward</code>
 <code>32834d8 my_branch@{2}: commit (amend): upgrade redis version</code>
 <code>2720e40 my_branch@{3}: commit: upgrade redis version</code></pre>
@@ -232,7 +582,7 @@
 		<p><br/></p>
 <h1>garbage collection</h1>
 <p>git does a <code>gc</code> when the number of &#8220;loose&#8221; objects hits a threshold</p>
-<p>something like every 1000 commits </p>
+<p>something like every 1000 commits</p>
 
 	</div></section>
 	
@@ -633,11 +983,15 @@ As of git 1.8.5, git has finally added a rebase switch to <code>pull</code>:</p>
 	<script src="shower/shower.min.js"></script>
 
 	
-		<script src="node_modules/shower-core/shower.min.js?1397359076000"></script>
+		<script src="node_modules/shower-core/shower.min.js?1410714146000"></script>
 	
 
 	
 
 	<!-- Shower: http://shwr.me -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </html>

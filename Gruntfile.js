@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		shower: {
 			index: {
-				title: 'Understanding Git',
+				title: 'Workshop D3',
 				src: 'src/index.md',
 				styles: 'styles/screen.css',
 				scripts: [
