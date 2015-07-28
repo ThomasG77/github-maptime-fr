@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		shower: {
 			index: {
-				title: 'Workshop D3',
+				title: 'MapTime Nantes 23 Juillet 2015',
 				src: 'src/index.md',
 				styles: 'styles/screen.css',
 				scripts: [

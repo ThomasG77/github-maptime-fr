@@ -1,981 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Understanding Git</title>
+	<title>MapTime Nantes 23 Juillet 2015</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=680, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/ribbon/styles/screen.css">
 	
-		<link rel="stylesheet" href="styles/screen.css?1433700806840">
+		<link rel="stylesheet" href="styles/screen.css?1437660988417">
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 </head>
 <body class="list">
 	<header class="caption">
-		<h1 id="workshop-d3">Workshop D3</h1>
+		<h1 id="utiliser-des-donn-es-opendata-br-g-ographiques-conjointement-avec-github">Utiliser des données OpenData <br>géographiques conjointement avec Github</h1>
 <p>par <a href="https://twitter.com/ThomasG77">@ThomasG77</a>, WebGeoDataVore</p>
 
 	</header>
 
 	
 	<section class="slide shout" ><div>
-		<h1>Workshop D3</h1>
-<h2>par <a href="https://twitter.com/ThomasG77">@ThomasG77</a></h2>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<ul>
-<li><p>D3: possibilités de représentations et écosystème</p>
-</li>
-<li><p>Contextualisation: pourquoi D3? La visualisation de données</p>
-</li>
-<li><p>Quel(s) intérêt(s) pour la cartographie ?</p>
-</li>
-<li><p>Rappels pratiques</p>
-</li>
-<li><p>Travaux pratiques avec mise en ligne de votre démo</p>
-</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>De nombreux exemples</h1>
-<ul>
-<li><a href="https://github.com/mbostock/d3/wiki/Gallery">Exemples officiels</a></li>
-<li><a href="http://christopheviau.com/d3list/gallery.html">Gallerie de Christophe Viau</a></li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Une parenté: <a href="https://mbostock.github.io/protovis/">Protovis</a></h1>
-<img alt="" align="center" src="images/website-protovis.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Un écosystème effervescent</h1>
-<ul>
-<li>Natif</li>
-<li>Surcouches</li>
-<li>Surcouches cartographiques</li>
-<li>Services et autres programmes autour</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
-		<p><br></p>
-<h1>Surcouches pour des besoins classiques (sans cartographie)</h1>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<ul>
-<li><a href="http://nvd3.org">http://nvd3.org</a></li>
-</ul>
-<img alt="" align="center" src="images/website-nvd3.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<ul>
-<li><a href="http://dimplejs.org">http://dimplejs.org</a></li>
-</ul>
-<img alt="" align="center" src="images/website-dimple.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<ul>
-<li><a href="http://c3js.org">http://c3js.org</a></li>
-</ul>
-<img alt="" align="center" src="images/website-c3js.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<ul>
-<li><a href="https://tenxer.github.io/xcharts/">https://tenxer.github.io/xcharts/</a></li>
-</ul>
-<img alt="" align="center" src="images/website-xcharts.png">
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
-		<p><br></p>
-<h1>Surcouches cartographiques</h1>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Choroplèthes et points proportionnels, <a href="https://datamaps.github.io">https://datamaps.github.io</a></h1>
-<img alt="" align="center" src="images/website-datamaps.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Visualisation avec fond de plan et plus, <a href="https://github.com/emeeks/d3-carto-map">https://github.com/emeeks/d3-carto-map</a></h1>
-<img alt="" align="center" src="images/website-d3cartomap.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Globe 3D, <a href="http://planetaryjs.com">http://planetaryjs.com</a></h1>
-<img alt="" align="center" src="images/website-planetaryjs.png">
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Services et autres applications utilisant D3</h1>
-<p>Pour faire une première visualisation en ligne</p>
-<ul>
-<li><a href="http://datamatic.io">http://datamatic.io</a></li>
-<li><a href="http://app.raw.densitydesign.org">http://app.raw.densitydesign.org</a></li>
-</ul>
-<p>En passant depuis un autre language de programmation</p>
-<ul>
-<li><a href="https://github.com/areski/python-nvd3">https://github.com/areski/python-nvd3</a></li>
-</ul>
+		<h1>MapTime Nantes</h1>
+<h2>Utiliser des données OpenData<br> géographiques conjointement <br>avec Github par <a href="https://twitter.com/ThomasG77">@ThomasG77</a> (23 Juillet 2015)</h2>
 
 	</div></section>
 	
 	<section class="slide " ><div>
 		<p><br></p>
-<h1>Contexte de D3: OpenData et Visualisation de données</h1>
-<p>Deux phénomènes liés à un changement de vision du rapport au citoyen</p>
-<p>Quelques raccourcis explicatifs sur ces sujets</p>
+<h1>Qui je suis?</h1>
+<p>Consultant SIG, OpenData et visualisation de données faisant du conseil, de la formation et du développement.</p>
+<p>Auteur d&#39;un livre sur <a href="https://www.packtpub.com/web-development/openlayers-3-beginner%E2%80%99s-guide">OpenLayers 3</a> (en anglais), un bibliothèque JavaScript pour afficher des cartes en ligne</p>
+<p>Spécialiste JavaScript et Python.</p>
 
 	</div></section>
 	
 	<section class="slide " ><div>
 		<p><br></p>
-<h1>Principes de l&#39;OpenData:</h1>
-<ul>
-<li>Données déjà payées dans le cadre du service public donc doivent être disponibles</li>
-<li>Attente de transparence de la part des citoyens</li>
-<li>Création de richesse potentielle mais comment valoriser?</li>
-<li>OpenData et DataDéluge: trop de données = perte de sens ou impossible à extraire</li>
-<li>Visualisation de données vue comme un moyen de permettre la valorisation</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br></p>
-<h1>Plusieurs aspects de la visualisation de données:</h1>
-<ul>
-<li>Acquérir</li>
-<li>Analyser/Nettoyer</li>
-<li>Valoriser</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br></p>
-<h1>D3 intervient en phase 2 et 3:</h1>
-<ul>
-<li>pour analyser la donnée (distribution, anomalies,...)</li>
-<li>pour valoriser la donnée: &quot;bon&quot; diagramme pour répondre à une question ou s&#39;interroger sur une donnée</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Quelques exemples de classification</h1>
-<ul>
-<li><a href="http://www.datavizcatalogue.com">http://www.datavizcatalogue.com</a></li>
-<li><a href="http://img.labnol.org/di/data-chart-type.png">http://img.labnol.org/di/data-chart-type.png</a></li>
-<li><a href="http://www.visual-literacy.org/periodic_table/periodic_table.html">http://www.visual-literacy.org/periodic_table/periodic_table.html</a></li>
-<li><a href="http://www.los-list.com/blog/wp-content/uploads/2010/03/VisualMiscellaneumTypesofInformationL.gif">http://www.los-list.com/blog/wp-content/uploads/2010/03/VisualMiscellaneumTypesofInformationL.gif</a></li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Intérêts dans un contexte cartographique</h1>
-<p>Plusieurs visions possibles:</p>
-<ul>
-<li>remplacer des outils comme Leaflet, OpenLayers</li>
-<li>un seul outil &quot;pour les gouverner tous&quot;</li>
-<li>complément cartographique ou non cartographique</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br></p>
-<h1>Commentaires</h1>
-<ul>
-<li>Pour le point 1, c&#39;est un question de besoin: s&#39;il est simple, D3 peut être suffisant</li>
-<li>Pour le point 2, plutôt pour ceux qui partent de D3</li>
-<li>Pour le point 3: soit parce que D3 permet des visualisations cartographiques originales soit parce qu&#39;il y a besoin d&#39;autres choses que des cartes pour la problématique.</li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Qui l&#39;utilise?</h1>
-<ul>
-<li>Journalistes de données (Le monde, Le Temps, Rue 89, Ouest Media Lab,...)</li>
-<li>Humanités numériques (chercheurs comme Martin Grandjean)</li>
-<li>Sociétés spécialisées en visualisation de données: Stamen Design, DataVeyes, We Do Data,...</li>
-<li>Pratiquants de la &quot;data science&quot; et du &quot;big data&quot;</li>
-<li>Sociétés ayant besoin de tableaux de bord</li>
-</ul>
-<h1>Qui en a besoin potentiellement?</h1>
+<h1>Posez des questions plutôt que d&#39;être perdu</h1>
+<p>Comme le niveau peut être hétérogène, nous préférons être interrompu. Même si nous n&#39;allons pas au bout de la présentation ou devons passer rapidement dessus, le support reste accessible.</p>
 
 	</div></section>
 	
 	<section class="slide " ><div>
 		<p><br></p>
 <h1>Plan</h1>
+<ol>
+<li>Les données OpenData</li>
+<li>Les données géographiques</li>
+<li>Les projections et systèmes de coordonnées: <br> le minimum incontournable</li>
+<li>Convertir les formats et les projections des fichiers pour Github</li>
+<li>Github, quezako?</li>
+</ol>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>L&#39;OpenData</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Rappel</h1>
+<center><iframe width="800" height="450" src="https://www.youtube.com/embed/aHxv_2BMJfw" frameborder="0" allowfullscreen></iframe></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1><a href="https://www.data.gouv.fr">Data.gouv.fr</a></h1>
+<center><a href="https://www.data.gouv.fr" target="_blank"><img src="images/data-gouv-fr.png" height="400px"/></a></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Portails locaux: <a href="http://www.opendata-map.org/map">Inventaire avec OpenData Map</a></h1>
+<center><a href="http://www.opendata-map.org/map" target="_blank"><img src="images/open-data-map.png" height="400px"/></a></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Portails locaux du territoire</h1>
+<center><a href="http://data.paysdelaloire.fr" target="_blank"><img src="images/opendata-region-pays-de-la-loire.png"/></a></center>
+
+<center><a href="http://data.loire-atlantique.fr" target="_blank"><img src="images/opendata-departement-loire-atlantique.png"/></a></center>
+
+<center><a href="http://data.nantes.fr" target="_blank"><img src="images/opendata-ville-nantes.png"/></a></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Données de référence échelle mondiale: <a href="http://www.naturalearthdata.com">Natural Earth Data</a></h1>
+<center><a href="http://www.naturalearthdata.com" target="_blank"><img src="images/natural-earth-data.png" height="400px"/></a></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Données de référence échelle mondiale: OpenStreetMap</h1>
+<p><a href="http://geotribu.net/node/769">&quot;OpenStreetMap ce n&#39;est pas (qu&#39;) une carte&quot;</a></p>
+<p><a href="http://overpass-turbo.eu/s/axU">Exemple de données avec OverPass Turbo</a> (interroger les données d&#39;OpenStreetMap)</p>
+<p><a href="https://mapzen.com/data/metro-extracts">Metro extract</a> (Extraction de données par grandes villes dont Nantes)</p>
+<p><a href="http://download.geofabrik.de/europe/france.html">Extraction OpenStreetMap de GeoFabrik</a> (par exemple la région Pays de La Loire)</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>De nombreuses autres sources de données</h1>
+<p><br></p>
+<p>Mais ce n&#39;est pas l&#39;objet de cette présentation!</p>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Les données géographiques</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>But: identifier ou filtrer les résultats en fonction des données géographiques</h1>
+<p><img src="images/filtre-type-fichiers-open-data-loire-atlantique.png" height="300px" />
+<img src="images/filtre-type-fichiers-data-gouv-fr.png" height="300px" /></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Deux grands types de <br>données géographiques</h1>
 <ul>
-<li>Pourquoi D3?</li>
-<li>Prérequis technique</li>
-<li>Selections</li>
-<li>Data</li>
-<li>Scales &amp; Axes</li>
-<li>Shapes</li>
-<li>Layouts </li>
+<li>Raster</li>
+<li>Vecteur</li>
 </ul>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>Les &quot;layouts&quot;?</h1>
-<p>Pour pouvoir générer des graphes, ils permettent de spécifier les relations graphiques entre les élements d&#39;un graphe.
-Généralement, il faut une structure de données précises en entrée. Un layout est un algorithme qui génère une structure de données.</p>
+		<h1>Raster</h1>
+<p><br></p>
+<center><img src="images/raster.png"/></center>
+
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>D3 permet de visualiser des données :</h1>
-<h2>en utilisant les standards du web: HTML, CSS, JS et SVG</h2>
-<h2>en transformant la donnée en élément HTML ou SVG</h2>
-<p><a href="demos/data-to-element-001.html" target="_blank"><img src="images/data-to-element.png" alt="Données vers éléments"></a></p>
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
-		<p><br></p>
-<h1>Data-Driven Documents</h1>
-<h2>Le nom “D3” fait référence aux 3 initiales et au <a href="http://www.w3.org/TR/dom/">Document Object Model (DOM) du W3C</a>.</h2>
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
-		<p><br></p>
-<h1>Ressources HTML</h1>
-<h2><a href="http://www.w3.org/TR/html5/">Spécifications HTML 5</a>, <a href="https://developers.whatwg.org">HTML 5 for developers</a>, <a href="https://developer.mozilla.org">Mozilla Developer Network</a></h2>
+		<h1>Formats associés</h1>
+<p>Généralement, il s&#39;agit de:</p>
+<ul>
+<li>TIF(F)(GeoTIFF) (extension <code>tif</code>)</li>
+<li>JPEG2000 (extension <code>jp2</code>)</li>
+</ul>
+<p>Sinon, on accède à des services web comme le WMS comme <a href="http://vuduciel.loire-atlantique.fr/">VueDuCiel.loire-atlantique.fr</a> pour cela.</p>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>Base HTML 5</h1>
-<pre><code>&lt;!doctype html&gt;</code>
-<code>&lt;html lang=&quot;fr&quot;&gt;</code>
-<code>&lt;head&gt;</code>
-<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
-<code>  &lt;title&gt;Titre de la page&lt;/title&gt;</code>
-<code>  &lt;style&gt;&lt;/style&gt;</code>
-<code>  &lt;script&gt;&lt;/script&gt;</code>
-<code>&lt;/head&gt;</code>
+		<h1>Vecteur</h1>
+<p><br></p>
+<center><img src="images/vector_types.png" width="800px" /></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Les formats de données principaux</h1>
+<ul>
+<li>SHP (lié historiquement au logiciel ArcView), inadapté pour le web</li>
+<li>MIF/MID ou TAB (lié au logiciel MapInfo), idem à SHP</li>
+<li>GeoJSON/TopoJSON, bon pour le web, à utiliser par défaut, (code EPSG 4326 recommandé)</li>
+<li>KML, bon pour le web mais avant tout pour les produits Google</li>
+</ul>
+<p>Voir <a href="http://mapschool.io/index.fr.html">MapSchool, section &quot;Les formats vecteur&quot;</a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>L&#39;exception du format tabulaire</h1>
+<ul>
+<li>CSV</li>
+</ul>
+<center><img src="images/illustration-csv-lat-long.png" width="600px"/></center>
+
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Projections et systèmes de coordonnées</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Pourquoi?</h1>
+<p>Parce que des exemples comme ci-dessous sont incompréhensibles pour un utilisateur final non spécialiste:</p>
+<ul>
+<li>L93 (Lambert 93),</li>
+<li>CC47 (Conique Conforme 47),</li>
+<li>WGS84 ou EPSG 4326</li>
+<li>EPSG:3857</li>
+<li>LAEA ETRS89</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>La forme de la Terre</h1>
+<center><img src="images/earth-shapes.jpg" width="800" /></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Principes des projections</h1>
+<p>Déformation quand on passe de 3 dimensions à 2 dimensions</p>
+<center><img src="images/orangepeel.jpg"/></center>
+
+<p><small>Crédits: <a href="http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo13.html">http://krygier.owu.edu/krygier_html/geog_222/geog_222_lo/geog_222_lo13.html</a></small></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Types de projections:</h1>
+<ul>
+<li>Conforme: conservation des angles (formes) <br> mais pas des distances ou des surfaces</li>
+<li>Equivalent: conservation des surfaces</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Curiosités liées aux projections (1/2)</h1>
+<p>Nord pas forcément &quot;en haut&quot;</p>
+<center><img src="images/mcarthursmap.jpg" height="350" /></center>
+
+<p><small>Crédits: <a href="http://www.odt.org/NewMaps.htm">http://odt.org</a></small></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Curiosités liées aux projections (2/2)</h1>
+<p>Centre de la carte du monde différent (non centré sur l&#39;Atlantique)</p>
+<center><img src="images/Mercator-Projection-Japan-Centered.gif" /></center>
+
+<p>Voir <a href="http://derrierelescartes.over-blog.com/article-13788300.html">cet article</a></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Les projections, l&#39;éternel débat</h1>
+<center><a href="http://sig974.free.fr/?p=733"><img src="images/projection.jpg" height="600" /></a></center>
+
+<p><small>Crédits: <a href="https://xkcd.com/977/">XKCD</a>, traduit par Thierry JOLIVEAU et retouché par Bertrand BOUTEILLES</small></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Les codes EPSG</h1>
+<p><em><strong>L&#39;EPSG</strong> – European Petroleum Survey Group –, un groupe créé en 1985 par Jean-Patrick Girbig alors avec ELF, a défini une liste des systèmes de coordonnées géoréférencées et leur a associés des codes pour les identifier.</em> (Wikipédia)</p>
+<p>Il faut connaitre les codes EPSG pour pouvoir effectuer des conversions entre projections</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Les projections les plus communes en France</h1>
+<ul>
+<li>Projections Lambert</li>
+<li>Le RGF 93 et les coniques conformes</li>
+<li>Le WGS84</li>
+<li>Le Spherical Mercator</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Projections &quot;Lambert zone&quot;</h1>
+<p>Projection historique. Une &quot;globale&quot;, le &quot;Lambert Zone II / Lambert 2 étendu&quot; (EPSG:27572). Sinon, 4 zones pour plus de précision</p>
+<center><img src="images/Lambert_4Zones.png" height="300" /></center>
+
+<p><small>Voir <a href="http://dogeo.fr/_apps/projection/">cette application</a> et les <a href="http://www.certu-catalogue.fr/catalog/product/view/id/1614/?___SID=U&amp;link=2141">fiches du CERTU</a></small></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Le RGF 93 et les coniques conformes</h1>
+<ul>
+<li>RGF 93 pour couvrir la France métropolitaine (EPSG:2154)</li>
+<li>9 coniques conformes (voir <a href="https://fr.wikipedia.org/wiki/Projection_conique_conforme_de_Lambert">page Wikipedia</a> pour les codes EPSG)</li>
+</ul>
+<center><img src="images/France_9_Zones_de_Lambert_CC.png" height="300" /></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Le WGS84</h1>
+<ul>
+<li>En simplifié, le système de votre GPS</li>
+<li>Il parle longitude/latitude</li>
+</ul>
+<center><img src="images/latlon.png" height="350" /></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Le Spherical Mercator</h1>
+<ul>
+<li>Inventé par Google en assimilant la Terre <br> à une sphère (EPSG:900913 ou EPSG:3857)</li>
+<li>Déformation importante</li>
+</ul>
+<center><img src="images/deformation-spherical-mercator.png" height="300" /></center>
+
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Convertir les formats et les projections des fichiers</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br><br></p>
+<h1>But: transformer les données que nous récupérons en GeoJSON pour les utiliser dans Github</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Quelques outils</h1>
+<ul>
+<li><a href="http://gdal.gloobe.org/install.html">GDAL/OGR</a>: outil pour changer formats et projections, en ligne de commande</li>
+<li><a href="http://ogre.adc4gis.com">OGRE</a>: OGR via le Net</li>
+<li><a href="http://qgis.org">QGIS</a>: outil bureautique assimilable à un &quot;logiciel de traitement de texte&quot; de la cartographie. Utilise aussi GDAL/OGR via une interface graphique</li>
+<li><a href="http://mapshaper.org">MapShaper</a>: outil pour simplifier les données (moins long à charger)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Mise en pratique de QGIS avec un SHP</h1>
+<ul>
+<li>Ouvrir un fichier shp</li>
+<li>Utiliser un fond de référence (<a href="http://professionnels.ign.fr/geofla">GEOFLA</a>)</li>
+<li>Activer la projection à la volée dans votre projet</li>
+<li>Ouvrir votre fichier à tester</li>
+<li>Vérifier la superposition</li>
+<li>Exporter en GeoJSON en WGS84 (EPSG:4326)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Mise en pratique de QGIS avec un fichier tabulaire</h1>
+<ul>
+<li>Ouvrir un fichier csv avec X/Y (<a href="http://professionnels.ign.fr/rgc">RGC</a> par exemple)</li>
+<li>Utiliser un fond de référence (<a href="http://professionnels.ign.fr/geofla">GEOFLA</a>)</li>
+<li>Activer la projection à la volée dans votre projet</li>
+<li>Ouvrir votre fichier à tester en &quot;texte délimité&quot;</li>
+<li>Choisir le système de projection</li>
+<li>Vérifier la superposition</li>
+<li>Exporter en GeoJSON en WGS84 (EPSG:4326)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Mise en pratique de Mapshaper pour la simplification de fichiers</h1>
+<ul>
+<li>Prendre le fichier GeoJSON créé précédemment</li>
+<li>Charger ce fichier dans l&#39;interface de <a href="http://mapshaper.org">MapShaper</a></li>
+<li>Tester la simplification</li>
+<li>Convertir en TopoJSON</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Github, quezako?</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Github:</h1>
+<ul>
+<li>est un service basé sur Git</li>
+<li>stocke des fichiers</li>
+<li>permet de visualiser des données géographiques</li>
+<li>permet de publier des sites web sans avoir son propre hébergement</li>
+<li>est augmenté par un suivi des évolutions grâce à un système commentaires</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Git, un gestionnaire de version décentralisé</h1>
+<p>Il permet de suivre l&#39;évolution des fichiers textuels dans le temps.
+Ce texte peut être du code, de la documentation ou de la donnée.
+Similaire au &quot;suivi des modifications&quot; mais chaque modification est suivie séparément</p>
+<center><img src="images/Sw-comments-nested-rtf.png" height="300px"/></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Git en pratique</h1>
+<p>Il existe de nombreux tutoriels. <br>L&#39;un des plus simples est <a href="https://try.github.io">Try Git</a> (anglais)</p>
+<p>Vous pouvez aussi allez voir:</p>
+<ul>
+<li>le livre en ligne <a href="https://git-scm.com/book/fr/v2">Pro Git</a></li>
+<li>le tutoriel <a href="http://gitimmersion.fr">Gitimmersion.fr</a> (je suis le traducteur) </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Le processus quand on débute:</h1>
+<ul>
+<li>On ajoute son nom utilisateur et son mail</li>
+<li>On initialise le dépôt sur sa machine</li>
+<li>On crée des fichiers</li>
+<li>On les ajoute comme devant faire partie des fichiers à gérer dans Git </li>
+<li>On fait un &quot;commit&quot; pour indiquer qu&#39;on veut garder une trace des ajouts</li>
+<li>On synchronise (optionel) avec un dépôt distant (Github dans ce cas) avec <code>push/pull</code></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Mise en pratique côté donnée (1/2)</h1>
+<ul>
+<li>Créer un compte Github (gratuit)</li>
+<li>Pas d&#39;usage de Git directement (à voir selon le niveau)</li>
+<li>Créer un dépôt appelé <code>github-maptime-nantes</code> en cochant <code>Initialize this repository with a README</code></li>
+</ul>
+<center><img src="images/creation-nouveau-depot-github.png" height="300px"/></center>
+
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Mise en pratique côté donnée (2/2)</h1>
+<ul>
+<li>Allez sur la page avec <a href="https://gist.github.com/ThomasG77/019eb4d29d1d9742ef41">ce fichier</a></li>
+<li>Créer un nouveau fichier dans votre dépôt avec le même nom que le fichier vu précédemment</li>
+<li>Copier le contenu du <a href="https://gist.githubusercontent.com/ThomasG77/019eb4d29d1d9742ef41/raw/b50031969252bd27c1ca8ccb4b7d9b9c52feb6e7/villes-arrondissements-sup-100000habs-france.geojson">fichier &quot;brut&quot; (ou &quot;raw&quot;)</a></li>
+</ul>
+<p><strong>Qu&#39;avez vous vu, constaté?</strong></p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Faire évoluer la donnée</h1>
+<ul>
+<li>Allez sur le site en ligne <a href="http://geojson.io">http://geojson.io</a> puis autoriser cette application à utiliser Github en allant sur <code>login</code> (texte cliquable en haut à droite)</li>
+<li>Allez sur <code>Open</code> puis <code>Github</code> puis choisir le dépôt créé pour accéder au fichier</li>
+<li>Changez la population de Nantes à 291604 puis sauvez (Ctrl + S quand vous avez le focus dans le bloc droit)</li>
+<li>Ajoutez la ville de la Roche sur Yon (-1.428653, 46.669352), changez ces attributs et sauvez</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Voir les différences</h1>
+<ul>
+<li>En théorie, il est possible de voir <a href="https://github.com/blog/1772-diffable-more-customizable-maps">les différences</a> de manière visuelle</li>
+<li>En pratique, on utilise plutôt l&#39;aperçu textuel quand on a compris la syntaxe du GeoJSON</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Visualiser les données</h1>
+<p>Partiellement vu mais il faut noter la possibilité</p>
+<ul>
+<li>de <a href="https://help.github.com/articles/mapping-geojson-files-on-github/">styler</a></li>
+<li>de <a href="https://github.com/blog/1541-geojson-rendering-improvements">grouper les points (clustering)</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Mise en pratique des styles</h1>
+<ul>
+<li>Reprenez les exemples</li>
+<li>Amusez-vous soit à mettre à jour les fichiers existants, soit à créer de nouveaux fichiers en ajoutant des styles</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Recommandations/limitations:</h1>
+<p>Taille des données &lt; 10MB pour édition et aperçu</p>
+<p>Données plus importantes (10MB - 100MB): Editer sur votre machine et synchroniser avec l&#39;application Github (<a href="https://mac.github.com/">pour mac</a> &amp; <a href="https://windows.github.com/">ou windows</a>)</p>
+<p>Données &gt; 100MB: Pas vraiment adaptée pour être ici mais peuvent être stockés ainsi</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>L&#39;hébergement de fichiers</h1>
+<p>En fait, si on utilise Github, on héberge sans coût des fichiers tant qu&#39;on est prêt à les partager car Open Source. Ils sont bruts: un fichier HTML n&#39;est pas interprété.</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Publication de sites web</h1>
+<ul>
+<li>via les <a href="https://pages.github.com">pages Github</a></li>
+<li>via des services tiers</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p><br></p>
+<h1>Publications de site web</h1>
+<ul>
+<li><a href="https://github.com/etalab/codes-juridiques-francais">Données législatives</a></li>
+<li><a href="https://github.com/vbarbaresi/MetroGit">Détournement des données du Métro à Paris</a></li>
+<li><a href="https://cambridgegis.github.io/gisdata.html">Portails SIG OpenData simple</a></li>
+<li>Site web classique comme <a href="http://github.com/maptime/nantes">MapTime Nantes</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Règles</h1>
+<ul>
+<li>Pour un utilisateur, il y a un dépôt spécial avec le nom <code>&lt;user&gt;.github.io</code> qui devient <code>http://&lt;user&gt;.github.io</code> (branche master)</li>
+<li>Pour un dépôt <code>http://github.com/&lt;user&gt;/&lt;depot&gt;</code> devient <code>http://&lt;user&gt;.github.com/&lt;depot&gt;/</code> (branche gh-pages)</li>
+<li>Possibilité d&#39;associer son propre domaine au lieu d&#39;utiliser celui de Github </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Mise en pratique (1/2)</h1>
+<p><strong>Iframe pour encapsuler le code d&#39;un site tiers comme UMap <br>si vous voulez une adresse &quot;propre&quot;</strong></p>
+<pre><code>&lt;html&gt;</code>
 <code>&lt;body&gt;</code>
-<code>  &lt;!-- Le reste du contenu --&gt;</code>
+<code>&lt;iframe src=&quot;http://umap.openstreetmap.fr/fr/map/les-espaces-naturels-sensibles-en-ille-et-vilaine_25379#9/48.1835/-1.6232&quot; width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot;&gt;</code>
+<code>  &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;</code>
+<code>&lt;/iframe&gt;</code>
 <code>&lt;/body&gt;</code>
-<code>&lt;/html&gt;</code></pre><p><a href="demos/html-basic-002.html" target="_blank">Démo</a></p>
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
-		<p><br></p>
-<h1>Ressources SVG</h1>
-<h2><a href="http://www.w3.org/TR/SVG/">Spécifications SVG</a>, <a href="https://developer.mozilla.org/en/SVG">MDN, partie SVG</a>, <a href="https://github.com/mbostock/d3/wiki/SVG-Shapes">Référence de l&#39;API D3</a></h2>
-
+<code>&lt;/html&gt;</code></pre>
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>Démo SVG</h1>
-<pre><code>&lt;!doctype html&gt;</code>
-<code>&lt;html lang=&quot;fr&quot;&gt;</code>
-<code>&lt;head&gt;</code>
-<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
-<code>  &lt;title&gt;Exemple SVG&lt;/title&gt;</code>
-<code>  &lt;style&gt;&lt;/style&gt;</code>
-<code>  &lt;script&gt;&lt;/script&gt;</code>
-<code>&lt;/head&gt;</code>
-<code>&lt;body&gt;</code>
-<code>  &lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;</code>
-<code>    &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot; stroke=&quot;black&quot; stroke-width=&quot;0.5&quot; fill=&quot;#F89C43&quot; /&gt;</code>
-<code>    Navigateur sans support SVG &quot;inline&quot;.</code>
-<code>  &lt;/svg&gt; </code>
-<code>&lt;/body&gt;</code>
-<code>&lt;/html&gt;</code></pre><p><a href="demos/svg-basic-003.html" target="_blank">Démo</a></p>
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
 		<p><br></p>
-<h1>Ressources CSS</h1>
-<h2><a href="http://www.w3.org/TR/html5/">Spécifications HTML 5</a>, <a href="https://developers.whatwg.org">HTML 5 for developers</a>, <a href="https://developer.mozilla.org">Mozilla Developer Network</a></h2>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Démo CSS</h1>
-<pre><code>&lt;!doctype html&gt;</code>
-<code>&lt;html lang=&quot;fr&quot;&gt;</code>
-<code>&lt;head&gt;</code>
-<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
-<code>  &lt;title&gt;Exemple CSS&lt;/title&gt;</code>
-<code>  &lt;style&gt;</code>
-<code>  body {</code>
-<code>    background-color: #F89C43;</code>
-<code>  }</code>
-<code>  &lt;/style&gt;</code>
-<code>  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code>
-<code>&lt;/head&gt;</code>
-<code>&lt;body&gt;</code>
-<code>  &lt;!-- Le reste du contenu --&gt;</code>
-<code>&lt;/body&gt;</code>
-<code>&lt;/html&gt;</code></pre><p><a href="demos/css-basic-004.html" target="_blank">Démo</a></p>
-
-	</div></section>
-	
-	<section class="slide quieter" ><div>
-		<p><br></p>
-<h1>Ressources JavaScript</h1>
-<h2><a href="http://www.w3.org/TR/SVG/">Spécifications SVG</a>, <a href="https://developer.mozilla.org/en/SVG">MDN, partie SVG</a>, <a href="https://github.com/mbostock/d3/wiki/SVG-Shapes">Référence de l&#39;API D3</a>, <a href="http://jsbooks.revolunet.com">liste de livres JavaScript de Revolunet</a> dont <a href="http://fr.eloquentjavascript.net/">Eloquent JavaScript</a> en français</h2>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Démo JavaScript</h1>
-<pre><code>&lt;!doctype html&gt;</code>
-<code>&lt;html lang=&quot;fr&quot;&gt;</code>
-<code>&lt;head&gt;</code>
-<code>  &lt;meta charset=&quot;utf-8&quot;&gt;</code>
-<code>  &lt;title&gt;Exemple JavaScript&lt;/title&gt;</code>
-<code>  &lt;style&gt;&lt;/style&gt;</code>
-<code>  &lt;script&gt;</code>
-<code>    console.log([5, 10, 15, 20, 25]);</code>
-<code>  &lt;/script&gt;</code>
-<code>&lt;/head&gt;</code>
-<code>&lt;body&gt;</code>
-<code>  &lt;!-- Le reste du contenu --&gt;</code>
-<code>&lt;/body&gt;</code>
-<code>&lt;/html&gt;</code></pre><p><a href="demos/css-basic-004.html" target="_blank">Démo</a></p>
+<h1>Mise en pratique (2/2)</h1>
+<p><strong>Héberger son exemple sur les pages Github</strong></p>
+<ul>
+<li>Créez un fichier index.html comme pour <a href="https://gist.github.com/ThomasG77/c38e6b0ecfd014342aad">ce cas</a></li>
+<li>Changez la référence vers votre fichier GeoJSON </li>
+</ul>
 
 	</div></section>
 	
 	<section class="slide " ><div>
 		<p><br></p>
-<h1>JavaScript, l&#39;incontournable</h1>
-<quote><i>Le JavaScript peut être considéré comme la glue dans D3:<br>rien ne marche sans lui.</i></quote>
-
-<p>Il faut donc le maîtriser correctement pour pouvoir produire des visualisations personnalisées ou personnaliser les outils utilisant D3.</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>Chrome Developer Tools</h1>
-<p><a href="https://developer.chrome.com/devtools" target="_blank"><img src="images/console-chrome.png" /></a></p>
+<h1>Via des services tiers</h1>
+<ul>
+<li>On peut utiliser des GIST qui sont comme des dépôts Github simples pour partager des &quot;snippets&quot; (bout de code) et on travaille conjointement avec <a href="http://bl.ocks.org">Bl.ocks.org</a> pour l&#39;aperçu</li>
+<li>On peut utiliser des sites tiers qui interprète les pages HTML, le CSS et le JavaScript en dehors des pages Github. C&#39;est le cas de <a href="http://rawgit.org">RawGit</a> ou <a href="http://htmlpreview.github.io">HtmlPreview</a></li>
+</ul>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>Plugin FireBug (Mozilla Firefox)</h1>
-<p><a href="http://getfirebug.com" target="_blank"><img src="images/console-firebug.png" /></a></p>
+		<p><br></p>
+<h1>Commentaires pour discuter des changements</h1>
+<p>Fonctionnalité clairement non géographique néanmoins son intérêt est:</p>
+<ul>
+<li>de permettre de discuter la mise à jour de données,</li>
+<li>demander de nouveaux jeux de données: cela peut éviter d&#39;avoir un forum.</li>
+<li>gérer des états d&#39;avancement et des mots clés pour trier, définir les priorités de travail,...</li>
+</ul>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>Debuggueur Mozilla Firefox par défaut</h1>
-<p><a href="https://developer.mozilla.org/fr/docs/Outils/D%C3%A9bogueur" target="_blank"><img src="images/console-mozilla-default.png" /></a></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>&quot;Secrets of the Browser<br>Developer Tools&quot;</h1>
-<p><a href="http://devtoolsecrets.com" target="_blank"><img src="images/dev-tool-secrets.png" /></a></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h2>Chercher par fonctions</h2>
-<p><a href="http://bl.ocksplorer.org">http://bl.ocksplorer.org</a></p>
-<h1>Se retrouver dans l&#39;API</h1>
-<p><a href="http://devdocs.io/d3/">http://devdocs.io/d3/</a>
-<a href="https://github.com/mbostock/d3/wiki/API-Reference">https://github.com/mbostock/d3/wiki/API-Reference</a></p>
-<h2>Faire vos démos en ligne</h2>
-<p><a href="http://bl.ocks.org">http://bl.ocks.org</a>
-<a href="http://tributary.io">http://tributary.io</a>
-<a href="http://jsfiddle.net">http://jsfiddle.net</a></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>tag</h1>
-<p>fixed commit pointers</p>
-<pre><code>                      A---B---C </code>
-<code>                              ↑</code>
-<code>                         release_1.0</code></pre><pre><code>% git commit -m &quot;adding stuff to C&quot;</code></pre><pre><code>                      A---B---C---D </code>
-<code>                              ↑</code>
-<code>                         release_1.0</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>branch</h1>
-<p>floating commit pointer</p>
-<pre><code>                      A---B---C</code>
-<code>                              ↑</code>
-<code>                            master</code></pre><pre><code>% git commit -m &quot;adding stuff to B&quot;</code></pre><pre><code>                      A---B---C---D</code>
-<code>                                  ↑</code>
-<code>                                master</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>remote branch</h1>
-<p>a &#8220;remote&#8221; branch is just a commit pointer in your local repo</p>
-<pre><code>                                 master</code>
-<code>                                    ↓</code>
-<code>                    A---B---C---D---E</code>
-<code>                            ↑       </code>
-<code>                      origin/master</code></pre><p>it&#39;s updated whenever you do a <code>fetch</code> or <code>pull</code>, otherwise nothing remote about them</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>branch</h1>
-<p>text files in the <code>.git</code> directory</p>
-<pre><code>% ls -1 .git/refs/heads/**/*</code>
-<code>.git/refs/heads/master</code>
-<code>.git/refs/heads/my_feature_branch</code></pre><pre><code>% ls -1 .git/refs/remotes/**/* </code>
-<code>.git/refs/remotes/origin/HEAD</code>
-<code>.git/refs/remotes/origin/master</code>
-<code>.git/refs/remotes/origin/my_feature_branch</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>branch</h1>
-<p>contains is the SHA of the commit it&#39;s pointing at</p>
-<pre><code>% cat .git/refs/heads/master</code>
-<code>0981e8c8ffbd3a1277dda1173fb6f5cbf4750d51</code>
-<code>&shy;</code>
-<code># .git/objects/09/81e8c8ffbd3a1277dda1173fb6f5cbf4750d51</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>branches point at commits</h1>
-<p>Contain <code>tree</code> (filesystem), <code>parent</code> commits and commit metadata</p>
-<pre><code>% git cat-file -p 0981e8c8ffbd3a1277dda1173fb6f5cbf4750d51</code>
-<code>tree 4fd7894316b4659ef3f53426166697858d51a291</code>
-<code>parent e324971ecf1e0f626d4ba8b0adfc22465091c100</code>
-<code>parent d33700dde6d38b051ba240ee97d685afdaf07515</code>
-<code>author Ted Naleid &lt;contact@naleid.com&gt; 1328567163 -0800</code>
-<code>committer Ted Naleid &lt;contact@naleid.com&gt; 1328567163 -0800</code>
-<code>&shy;</code>
-<code>merge commit of two branches</code></pre><p>The ID is the SHA of the commit&#39;s contents</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>branches</h1>
-<p>commits don&#39;t &#8220;belong to&#8221; branches, there&#39;s nothing in the commit metadata about branches</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>branches</h1>
-<p>a branch&#39;s commits are implied by the ancestry of the commit the branch points at</p>
-<pre><code>                                 feature</code>
-<code>                                    ↓</code>
-<code>                            E---F---G </code>
-<code>                           /</code>
-<code>                      A---B---C---D </code>
-<code>                                  ↑ </code>
-<code>                                master</code></pre><p><code>master</code> is <code>A-B-C-D</code> and <code>feature</code> is <code>A-B-E-F-G</code></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>HEAD</h1>
-<p><code>HEAD</code> is the current branch/commit</p>
-<p>This will be the parent of the next commit</p>
-<pre><code>% cat .git/HEAD</code>
-<code>ref: refs/heads/master</code></pre><p>most of the time it points to a branch, but can point directly to a SHA when &#8220;detached&#8221;</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>the reflog</h1>
-<p>a log of recent <code>HEAD</code> movement</p>
-<pre><code>% git reflog                                       </code>
-<code>d72efc4 HEAD@{0}: commit: adding bar.txt</code>
-<code>6435f38 HEAD@{1}: commit (initial): adding foo.txt</code></pre><pre><code>% git commit -m &quot;adding baz.txt&quot;</code></pre><pre><code>% git reflog                                       </code>
-<code>b5416cb HEAD@{0}: commit: adding baz.txt</code>
-<code>d72efc4 HEAD@{1}: commit: adding bar.txt</code>
-<code>6435f38 HEAD@{2}: commit (initial): adding foo.txt</code></pre><p>by default it keeps at least 30 days of history</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>the reflog</h1>
-<p>unique to a repository instance</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>the reflog</h1>
-<p>can be scoped to a particular branch</p>
-<pre><code>% git reflog my_branch</code>
-<code>347f5fe my_branch@{0}: merge master: Merge made by the recurs…</code>
-<code>4e6007e my_branch@{1}: merge origin/my_branch: Fast-forward</code>
-<code>32834d8 my_branch@{2}: commit (amend): upgrade redis version</code>
-<code>2720e40 my_branch@{3}: commit: upgrade redis version</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>dangling commit</h1>
-<p>if the only thing pointing to a commit is the reflog, it&#39;s &#8220;dangling&#8221;</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>dangling commit</h1>
-<pre><code>                    A---B---C---D---E---F</code>
-<code>                                        ↑</code>
-<code>                                      master</code></pre><pre><code>% git reset --hard SHA_OF_B</code></pre><pre><code>                    A---B---C---D---E---F</code>
-<code>                        ↑</code>
-<code>                      master</code></pre><p><code>C..F</code> are now dangling</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>dangling commit</h1>
-<p>but they will be safe for ~30 days because of the reflog</p>
-<pre><code>                                     HEAD@{1}</code>
-<code>                                        ↓</code>
-<code>                    A---B---C---D---E---F</code>
-<code>                        ↑</code>
-<code>                     master (also HEAD@{0})</code></pre><p><code>HEAD@{1}</code> will become <code>HEAD@{2}</code>..<code>HEAD@{N}</code> as refs are added to the reflog</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>garbage collection</h1>
-<p>once a dangling commit leaves the reflog, it is &#8220;loose&#8221; and is at risk of garbage collection</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>garbage collection</h1>
-<p>git does a <code>gc</code> when the number of &#8220;loose&#8221; objects hits a threshold</p>
-<p>something like every 1000 commits</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>garbage collection</h1>
-<p>to prevent garbage collecting a commit, just point something at it</p>
-<pre><code>% git tag mytag SHA_OF_DANGLING_COMMIT</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>the index</h1>
-<p>a pre-commit staging area</p>
-<p><code>add -A :/</code> puts all changes in the index ready for commit</p>
-<p>some bypass the index with <code>git commit -a -m &quot;msg&quot;</code></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>you should have courage to experiment</h1>
-<p>you have <em>weeks</em> to retrieve prior commits if something doesn&#39;t work</p>
+		<h1>Conclusion</h1>
+<p>Github amorce des changements pour <br>les utilisateurs comme les organisations</p>
+<ul>
+<li>Renversement des processus: de &quot;top-down&quot; à &quot;bottom-up&quot;</li>
+<li>Renforcement et facilitation de la collaboration</li>
+<li>Influence des méthodes agiles: classique &quot;budget puis travail&quot; devient &quot;travail puis budget&quot;</li>
+</ul>
+<p><strong>Caractère disruptif</strong></p>
+<p>L&#39;aspect géo n&#39;échappe pas à cette tendance</p>
 
 	</div></section>
 	
 	<section class="slide shout" ><div>
-		<h1>understand where you are</h1>
-<h2>before you try to go somewhere else</h2>
-
-	</div></section>
-	
-	<section class="slide quieter shout" ><div>
-		<h1>You need (at least) one repo visualization tool that you grok</h1>
-
-	</div></section>
-	
-	<section class="slide small-code" ><div>
-		<h1>Here&#39;s Mine:</h1>
-<pre><code>~/.gitconfig:</code>
-<code>[alias]</code>
-<code>l = log --graph --pretty=&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset&#39; --abbrev-commit --date=relative</code>
-<code>la = !git l --all</code></pre><pre><code>git la</code></pre><img src="images/terminal.png" alt="" height="400px">
+		<h1>Questions</h1>
 
 	</div></section>
 	
 	<section class="slide " ><div>
-		<h1>There are others - Git Tower</h1>
-<img src="images/tower.png" alt="" height="500px">
+		<h1>Crédits</h1>
+<p>Nous tenons spécialement à remercier <a href="http://mapschool.io/index.fr.html">Tom MacWright](http://www.macwright.org) pour (Mapschool.io</a> et <a href="Jérémy Garniaux">Jérémy Garniaux</a> pour la traduction (nous avons été le relecteur)</p>
 
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>There are others - SourceTree</h1>
-<img src="images/sourcetree.png" alt="" height="500px">
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>Learn<br/>&#8220;the good parts&#8221; and make them your own</h1>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>checkout -</h1>
-<p>just like <code>cd -</code>, takes you to your previous branch</p>
-<pre><code>                        E---F  ← feature &amp; HEAD</code>
-<code>                       /</code>
-<code>                  A---B---C---D </code>
-<code>                              ↑ </code>
-<code>                           master</code></pre><pre><code>% git checkout -</code></pre><pre><code>                        E---F  ← feature </code>
-<code>                       /</code>
-<code>                  A---B---C---D </code>
-<code>                              ↑ </code>
-<code>                       master &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>commit --amend</h1>
-<p>redo the last commit</p>
-<pre><code>                        A---B---C</code>
-<code>                                ↑    </code>
-<code>                          master &amp; HEAD</code></pre><pre><code>&lt;... change some files ... &gt; </code>
-<code>% git commit -a --amend --no-edit</code></pre><pre><code>                              C&#39; ← master &amp; HEAD</code>
-<code>                             /</code>
-<code>                        A---B---C</code>
-<code>                                ↑    </code>
-<code>                  (dangling but still in reflog)</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>rebasing</h1>
-<p>reapplies a series of commits to a new parent commit</p>
-<p>then moves the current branch pointer</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>rebasing</h1>
-<pre><code>                        E---F  ← feature &amp; HEAD</code>
-<code>                       /</code>
-<code>                  A---B---C---D </code>
-<code>                              ↑ </code>
-<code>                           master</code></pre><pre><code>% git rebase master</code></pre><pre><code>                  (dangling but still in reflog)</code>
-<code>                            ↓</code>
-<code>                        E---F</code>
-<code>                       /</code>
-<code>                  A---B---C---D---E&#39;--F&#39;</code>
-<code>                              ↑       ↑ </code>
-<code>                           master  feature &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>rebasing</h1>
-<pre><code>% git rebase --abort</code></pre><p>If you get in trouble <code>--abort</code> and try again.  </p>
-<p>If you <em>really</em> get in trouble, you can <code>reset --hard</code> back to your last commit.</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>rebasing - a private activity</h1>
-<p>should never be done with commits that have been pushed</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>rebasing - a private activity</h1>
-<p>public rebasing is bad as others could have the same commits with different SHAs</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>cherry picking</h1>
-<p>apply a subset of changes from another branch</p>
-<pre><code>                            E---F---G </code>
-<code>                           /</code>
-<code>                      A---B---C---D </code>
-<code>                                  ↑ </code>
-<code>                             master &amp; HEAD</code></pre><pre><code>% git cherry-pick SHA_OF_F</code></pre><pre><code>                            E---F---G </code>
-<code>                           /</code>
-<code>                      A---B---C---D---F&#39; </code>
-<code>                                      ↑ </code>
-<code>                                 master &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide quieter shout" ><div>
-		<h1><code>reset</code> is for moving branch pointers</h1>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --soft</h1>
-<pre><code>                    A---B---C---D---E</code>
-<code>                                    ↑</code>
-<code>                                  master</code></pre><pre><code>% git reset --soft SHA_OF_C</code></pre><pre><code>                    working dir &amp; index still look like</code>
-<code>                                    ↓</code>
-<code>                    A---B---C---D---E</code>
-<code>                            ↑</code>
-<code>                          master</code></pre><ol>
-<li>moves <code>HEAD</code> &amp; the current branch to the specified <code>&lt;SHA&gt;</code></li>
-<li>index - unchanged </li>
-<li>working directory - unchanged </li>
-</ol>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --soft</h1>
-<p>useful for squashing the last few messy commits into one pristine commit</p>
-<pre><code>                    working dir &amp; index still look like</code>
-<code>                                    ↓</code>
-<code>                    A---B---C---D---E</code>
-<code>                            ↑</code>
-<code>                          master</code></pre><pre><code>% git commit -m &quot;perfect code on the &#39;first&#39; try&quot;</code></pre><pre><code>                    A---B---C---E&#39;</code>
-<code>                                ↑</code>
-<code>                              master</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --soft</h1>
-<p>What if you&#39;ve got a more complicated situation:</p>
-<pre><code>                              master</code>
-<code>                                ↓</code>
-<code>                A---B---C---D---E </code>
-<code>                 \       \</code>
-<code>                  F---G---H---I ← feature &amp; HEAD</code></pre><p>Can&#39;t <code>reset</code> our way out of this, right?</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --soft</h1>
-<p>Just do one last merge</p>
-<pre><code>% git merge master</code></pre><pre><code>                              master</code>
-<code>                                ↓</code>
-<code>                A---B---C---D---E </code>
-<code>                 \       \       \</code>
-<code>                  F---G---H---I---J ← feature &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --soft</h1>
-<p>and then we can <code>reset</code> into a single commit </p>
-<pre><code>% git reset --soft master</code></pre><pre><code>                A---B---C---D---E ← feature &amp; HEAD &amp; master</code>
-<code>                                 \</code>
-<code>                                  J ← working dir &amp; index</code></pre><pre><code>% git commit -m &quot;pristine J&quot;</code></pre><pre><code>                              master</code>
-<code>                                ↓</code>
-<code>                A---B---C---D---E---J&#39; ← feature &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --hard</h1>
-<pre><code>% git reset --hard &lt;SHA&gt;</code></pre><p><br/></p>
-<ol>
-<li>moves <code>HEAD</code> &amp; the current branch to the specified <code>&lt;SHA&gt;</code> </li>
-<li>clean the index, make it look like <code>&lt;SHA&gt;</code> </li>
-<li>clean the working copy, make it look like <code>&lt;SHA&gt;</code> </li>
-</ol>
-<p><span class="danger">dangerous</span> if you have <span class="danger">uncommitted work</span>, useful for undoing bad commits</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset --hard HEAD</h1>
-<pre><code>% git reset --hard HEAD</code></pre><p>just means clean out the working directory and any staged information, don&#39;t move the branch pointer</p>
-<p>for more info on <code>reset</code>, see: <a href="http://progit.org/2011/07/11/reset.html">http://progit.org/2011/07/11/reset.html</a></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>fetch</h1>
-<p>download new commits and update the remote branch pointer</p>
-<p>does not move any local branches</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>fetch</h1>
-<pre><code>                   origin/master</code>
-<code>(local)                  ↓</code>
-<code>                     A---B---C---D ← master &amp; HEAD</code></pre><pre><code>                     A---B---E---F   </code>
-<code>(origin)                         ↑ </code>
-<code>                              master (in remote repo)</code></pre><pre><code>% git fetch</code></pre><pre><code>                         origin/master</code>
-<code>                               ↓</code>
-<code>                           E---F</code>
-<code>(local)                   /</code>
-<code>                     A---B---C---D ← master &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>pull</h1>
-<p><code>pull</code> is <code>fetch</code> plus <code>merge</code></p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>pull</h1>
-<pre><code>&shy;</code>
-<code>                   origin/master</code>
-<code>(local)                  ↓</code>
-<code>                     A---B---C---D ← master &amp; HEAD</code></pre><pre><code>                     A---B---E---F   </code>
-<code>(origin)                         ↑ </code>
-<code>                              master (local ref in remote repo)</code></pre><pre><code>% git pull</code></pre><pre><code>                         origin/master</code>
-<code>                               ↓</code>
-<code>                           E---F----</code>
-<code>                          /         \</code>
-<code>(local)              A---B---C---D---G ← master &amp; HEAD</code></pre>
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>the &#8220;right&#8221; way to pull down changes from the server</h1>
-<ol>
-<li><code>stash</code> any uncommitted changes (if any)</li>
-<li><code>fetch</code> the latest refs and commits from origin</li>
-<li><code>rebase -p</code> your changes (if any) onto origin&#39;s head<br/> else, just fast-forward your head to match origin&#39;s</li>
-<li>un-<code>stash</code> any previously stashed changes</li>
-</ol>
-<p><code>fetch</code> + <code>rebase</code> avoids unnecessary commits</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>rebasing pull</h1>
-<p><br/>
-As of git 1.8.5, git has finally added a rebase switch to <code>pull</code>:</p>
-<pre><code>% git pull --rebase</code></pre><p>This will do the <code>fetch</code> + <code>rebase</code> for you (you still stash on your own).</p>
-
-	</div></section>
-	
-	<section class="slide shout myth" ><div>
-		<h1>git is dangerous</h1>
-<h2>myth #1</h2>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>git is the <em>safest</em> version control</h1>
-<h2>reality</h2>
-
-	</div></section>
-	
-	<section class="slide shout myth" ><div>
-		<h1>git lets you<br/>rewrite history</h1>
-<h2>myth #2</h2>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>rewriting <br/>history is a <em>lie</em></h1>
-<h2>reality</h2>
-
-	</div></section>
-	
-	<section class="slide shout myth" ><div>
-		<h1>git syntax is terrible</h1>
-<h2>myth #3</h2>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>git syntax is<br/><em>really terrible</em></h1>
-<h2>reality</h2>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>git mislabels things</h1>
-<h2>ex: git branches aren&#39;t what you think they are</h2>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>throw away your preconceptions from other version control systems</h1>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>Questions?</h1>
-
-	</div></section>
-	
-	<section class="slide shout" ><div>
-		<h1>Bonus Section!</h1>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>reset (default)</h1>
-<pre><code>% git reset [--mixed] &lt;SHA&gt;</code></pre><p><br/></p>
-<ol>
-<li>moves <code>HEAD</code> &amp; the current branch to the specified <code>&lt;SHA&gt;</code> </li>
-<li>clean the index, make it look like <code>&lt;SHA&gt;</code> </li>
-<li>working directory - unchanged</li>
-</ol>
-<p><code>git reset HEAD</code> will unstage everything in the index</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<p><br/></p>
-<h1>squashing</h1>
-<p>compresses N commits into one commit that&#39;s appended to a destination branch</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>squashing</h1>
-<pre><code>                              E---F---G ← feature</code>
-<code>                             /</code>
-<code>                A---B---C---D </code>
-<code>                            ↑ </code>
-<code>                     master &amp; HEAD</code></pre><pre><code>% git merge --squash feature</code></pre><pre><code>                              E---F---G ← feature</code>
-<code>                             /</code>
-<code>                A---B---C---D---G&#39; </code>
-<code>                                ↑ </code>
-<code>                         master &amp; HEAD</code></pre><p>cleans up history, when the thinking behind <code>E..F</code> is unimportant</p>
-
-	</div></section>
-	
-	<section class="slide " ><div>
-		<h1>recovering commits</h1>
-<p>Oops, I really wanted <code>C</code>!</p>
-<pre><code>                              C&#39; ← master &amp; HEAD</code>
-<code>                             /</code>
-<code>                        A---B---C ← (dangling)</code></pre><pre><code>% git reflog master  # find SHA_OF_C </code>
-<code>% git reset --hard SHA_OF_C</code></pre><pre><code>                              C&#39; ← (dangling)</code>
-<code>                             /</code>
-<code>                        A---B---C</code>
-<code>                                ↑    </code>
-<code>                            master &amp; HEAD</code></pre>
 	</div></section>
 	
 
